@@ -8,13 +8,7 @@ import Contact from 'views/Contact.jsx';
 
 let routes = [
     {
-        path: "/index",
-        name: "Home",
-        component: Home,
-        layout: "/kernel"
-    },
-    {
-        path: "/index",
+        path: "/home",
         name: "Home",
         component: Home,
         layout: "/kernel"
