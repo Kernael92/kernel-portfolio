@@ -16,8 +16,8 @@ class Home extends React.Component {
   render() {
       return (
               <>
-              <div className="content">
-                <h1>Hi, I am <stong>Kernael Apuko</stong></h1>
+              <div className="content home">
+                <h1>Hi, I am <span className="span">Kernael Apuko</span></h1>
                 <p>
                   I am a Full Stack web developer. 
                   I can provide clean code and pixel perfect design.
