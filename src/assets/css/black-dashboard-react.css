@@ -102,6 +102,36 @@
     margin-bottom: 1rem; 
     
   }
+  .card:hover {
+    box-shadow: 5px 5px 5px blue;
+    cursor: pointer;
+  }
+    
+  .card-body {
+    padding: 15px;
+    /* background-color:#fff; */
+    width:100%;
+  }
+  .body-content {
+    padding-bottom: 40px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  i{
+    padding-right:4px;
+    border: none;
+    box-shadow: none;
+    font-family: inherit;
+    background-color:transparent;
+    color: #0772db;
+    font-size: 15px;
+    transition:.25s;
+  }
+  .card-header {
+    padding: 15px;
+    
+  }
+  
   .span {
     color: #1d8cf8;
   }

@@ -3,7 +3,12 @@ import ImageZoom from 'react-medium-image-zoom';
 import IMG_2533 from 'assets/img/IMG_2533.JPG';
 
 
-let filePath = 'assets/files/KERNAEL APUKO CURRICULUM VITAE (1) (1).pdf';
+// reactstrap components
+import { Card, Row, CardHeader, CardBody, Col } from 'reactstrap';
+
+
+
+let filePath = '/KERNAEL APUKO CURRICULUM VITAE (1) (1).pdf';
 class About extends React.Component {
     render() {
         return (
@@ -18,7 +23,7 @@ class About extends React.Component {
                                         src: IMG_2533,
                                         alt: IMG_2533,
                                         className: 'img',
-                                        style: { width: '50em'}
+                                        style: { width: '30em'}
                                     }}
                                     zoomImage = {{
                                         src: IMG_2533,
@@ -39,6 +44,10 @@ class About extends React.Component {
                                     Kernael Apuko
                                 </p>
                                 <p>
+                                    <b>Nationality : </b>
+                                    Kenyan
+                                </p>
+                                <p>
                                     <b>Languages : </b>
                                     English, Kiswahili
                                 </p>
@@ -51,13 +60,55 @@ class About extends React.Component {
                                     Available
                                 </p>
                                 
-                                <a className="btn" href="assets/files/KERNAEL APUKO CURRICULUM VITAE (1) (1).pdf" onClick={(event) => { event.preventDefault(); window.open(filePath); }}>
+                                <a className="btn" href="/KERNAEL APUKO CURRICULUM VITAE (1) (1).pdf" onClick={(event) => { event.preventDefault(); window.open(filePath); }}>
                                     DOWNLOAD CV
                                 </a>
                             </div>
-
+                            <div className="services">
+                                <h1>SERVICES</h1>
+                                <Row>
+                                    <Col lg="4">
+                                        <Card className="card">
+                                            <CardHeader>
+                                                <i className="fa fa-palette"></i>
+                                            </CardHeader>
+                                            <CardBody className="card-body">
+                                                <h2>Web Design</h2>
+                                                <p clasName="body-content">
+                                                    Lorem ipsum
+                                                </p>
+                                            </CardBody>
+                                        </Card>
+                                    </Col>
+                                    <Col lg="4">
+                                    <Card className="card">
+                                        <CardHeader>
+                                            <i className="fa fa-palette"></i>
+                                        </CardHeader>
+                                        <CardBody className="card-body">
+                                            <h2>Web development</h2>
+                                            <p clasName="body-content">
+                                                Lorem ipsum
+                                            </p>
+                                        </CardBody>
+                                    </Card>
+                                    </Col>
+                                    <Col lg="4">
+                                    <Card className="card">
+                                        <CardHeader>
+                                            <i className="fa fa-palette"></i>
+                                        </CardHeader>
+                                        <CardBody className="card-body">
+                                            <h2>Mobile Application</h2>
+                                            <p clasName="body-content">
+                                                Lorem ipsum
+                                            </p>
+                                        </CardBody>
+                                    </Card>
+                                    </Col>
+                                </Row>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </>
