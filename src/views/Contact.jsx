@@ -1,9 +1,51 @@
 import React from 'react';
+import * as emailjs from 'emailjs-com'
 
 // reactstrap components
-import { Row, Col } from 'reactstrap';
+import { Row, Col,Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 class Contact extends React.Component {
+    state = {
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    }
+
+    handleSubmit(e) {
+        e.preventDefault()
+
+        const { name, email, subject, message } = this.state 
+
+        let templateParams = {
+            name: name,
+            from_name: email,
+            to_name: 'apuko.kernael@gmail.com',
+            subject: subject,
+            message_html: message,
+        }
+
+        emailjs.send(
+            'gmail',
+            'template_Mk3vprTX',
+            templateParams,
+            'user_UIuHCFozJG8zqRYYlILsG',
+        )
+         this.resetForm()
+    }
+
+    resetForm() {
+        this.setState({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+        })
+    }
+
+    handleChange = (param, e) => {
+        this.setState({ [param]: e.target.value })
+    }
     render() {
         return (
             <>
@@ -11,35 +53,56 @@ class Contact extends React.Component {
                     <div className="container">
                         <Row>
                             <Col lg="6">
-                                <form method="POST" action="/contact">
-                                    <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Enter name" required/>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email address</label>
-                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required/>
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="message">Message</label>
-                                        <textarea class="form-control" id="message" rows="3" required></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-info">Send</button>
+                                <h1 className="p-heading1">Get in Touch</h1>
+                                <Form onSubmit={this.handleSubmit.bind(this)}>
+                                    <FormGroup controlId="formBasicEmail">
+                                        <Label className="text-muted">Email address </Label>
+                                        <Input
+                                            type="email"
+                                            name="email"
+                                            value={this.state.email}
+                                            className="text-primary"
+                                            onChange={this.handleChange.bind(this, 'email')}
+                                            placeholder="Enter email"
 
-                                    <div>
-                                        { window.location.hash === '#success' &&
-                                            <div id="success">
-                                            <p>Your message has been sent!</p>
-                                            </div>
-                                        }
-                                        { window.location.hash === '#error' &&
-                                            <div id="error">
-                                            <p>An error occured while submitting the form.</p>
-                                            </div>
-                                        }
-                                    </div>   
-                                </form>
+                                        />
+                                    </FormGroup>
+                                    <FormGroup controlId="formBasicName">
+                                        <Label className="text-muted">Name</Label>
+                                        <Input
+                                            type="text"
+                                            name="name"
+                                            value={this.state.name}
+                                            className="text-primary"
+                                            onChange={this.handleChange.bind(this, 'name')}
+                                            placeholder="Enter your name"
+
+                                        />
+                                    </FormGroup>
+                                    <FormGroup controlId="formBasicSubject">
+                                        <Label className="text-muted">Subject</Label>
+                                        <Input
+                                            type="text"
+                                            name="subject"
+                                            value={this.state.subject}
+                                            className="text-primary"
+                                            onChange={this.handleChange.bind(this, 'subject')}
+                                            placeholder="Subject"
+
+                                        />
+                                    </FormGroup>
+                                    <FormGroup controlId="formBasicMessage">
+                                        <Label className="text-muted">Message</Label>
+                                        <Input
+                                            type="textarea"
+                                            name="message"
+                                            value={this.state.message}
+                                            className="text-primary"
+                                            onChange={this.handleChange.bind(this, 'message')}
+                                        />
+                                    </FormGroup>
+                                    <Button variant="primary" type="submit">Submit</Button>
+                                </Form>
                             </Col>
                         </Row>
                     </div>

@@ -29,3 +29,5 @@ junit
 
 dist/
 *.egg-info/
+
+Views/Contact.jsx
