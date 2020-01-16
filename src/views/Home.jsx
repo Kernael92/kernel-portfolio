@@ -37,7 +37,7 @@ class Home extends React.Component {
                     <FaTwitter />
                   </a>
                   <a 
-                  href="https://github.com/Kernael92"
+                  href="https://www.linkedin.com/in/kernael-apuko-92636217b/"
                   className="linkedin"
                   >
                     <FaLinkedin />

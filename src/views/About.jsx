@@ -4,7 +4,7 @@ import IMG_2533 from 'assets/img/IMG_2533.JPG';
 
 
 // reactstrap components
-import { Card, Row, CardHeader, CardBody, Col } from 'reactstrap';
+import { Card, Row, CardHeader, CardBody, Col, CardDeck } from 'reactstrap';
 
 
 
@@ -67,10 +67,11 @@ class About extends React.Component {
                             <div className="services">
                                 <h1>SERVICES</h1>
                                 <Row>
+                                <CardDeck className="card-deck">
                                     <Col lg="4">
                                         <Card className="card">
                                             <CardHeader>
-                                                <i className="fa fa-palette"></i>
+                                                <i className="fa fa-dashboard"></i>
                                             </CardHeader>
                                             <CardBody className="card-body">
                                                 <h2>Web Design</h2>
@@ -83,7 +84,7 @@ class About extends React.Component {
                                     <Col lg="4">
                                     <Card className="card">
                                         <CardHeader>
-                                            <i className="fa fa-palette"></i>
+                                            <i className="fa fa-code"></i>
                                         </CardHeader>
                                         <CardBody className="card-body">
                                             <h2>Web development</h2>
@@ -96,7 +97,7 @@ class About extends React.Component {
                                     <Col lg="4">
                                     <Card className="card">
                                         <CardHeader>
-                                            <i className="fa fa-palette"></i>
+                                            <i className="fa fa-mobile-phone"></i>
                                         </CardHeader>
                                         <CardBody className="card-body">
                                             <h2>Mobile Application</h2>
@@ -106,6 +107,7 @@ class About extends React.Component {
                                         </CardBody>
                                     </Card>
                                     </Col>
+                                    </CardDeck>
                                 </Row>
                             </div>
                         </div>
