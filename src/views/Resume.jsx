@@ -55,10 +55,10 @@ class Resume extends React.Component {
                                         strokeWidth={1}
                                         percent={70}
                                     />
-                                    <h4>Angular</h4>
+                                    <h4>Heroku</h4>
                                     <Progress 
                                         strokeWidth={1}
-                                        percent={50}
+                                        percent={80}
                                     />
                                 </Col>
                             </Row>
@@ -73,54 +73,55 @@ class Resume extends React.Component {
                                 <Row>
                                     <Col lg="3">
                                         <p>
-                                            2019 - Present
+                                            October 2019 - Present
                                         </p>
                                     </Col>
                                     <Col lg="9">
                                         <h3>
-                                            <span>Full Stack Web Developer Intern</span>
+                                            <span className="span">Full Stack Web Developer Intern</span>
                                         </h3>
-                                        <h5>Certeon Technology</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur, 
-                                            adipisicing elit. Quas, magni mollitia, 
-                                            aspernatur consequatur accusamus vero eum facere 
-                                            exercitationem velit suscipit ipsam placeat libero. 
-                                            Deleniti exercitationem nostrum quasi. Molestiae, vel porro.
-                                        </p>
+                                        <h4>Certeon Technology</h4>
+                                        <h6>Achievements and responsibilities</h6>
+                                    
+                                        <ul>
+                                            <li></li>
+                                        </ul>
                                     </Col>
                                     <Col lg="3">
                                         <p>
-                                            2017 - 2018
+                                            September 2017 - September 2018
                                         </p>
                                     </Col>
                                     <Col lg="9">
                                         <h3>
-                                            <span>  CIP Agent</span>
+                                            <span className="span">  CIP Agent</span>
                                         </h3>
-                                        <h5>Turkish Airline Lounge</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur, 
-                                            adipisicing elit. Quas, magni mollitia, 
-                                            aspernatur consequatur accusamus vero eum facere 
-                                            exercitationem velit suscipit ipsam placeat libero. 
-                                            Deleniti exercitationem nostrum quasi. Molestiae, vel porro.
-                                        </p>
+                                        <h4 >Turkish Airline Lounge</h4>
+                                        <h6>Achievements and responsibilities</h6>
+                                        <hr/>
+                                        <ul>
+                                            <li>Drafted daily reports</li>
+                                            <li>Monitored and managed the system used to record and store passengers details</li>
+                                            <li>Welcomed and ensured the comfortability of business and first class passengers in the Turkish business lounge at Jomo Kenyatta International Airport</li>
+
+                                        </ul>
                                     </Col>
                                     <Col lg="3">
                                         <p>
-                                            2017 - 2017
+                                            March 2017 - August 2017
                                         </p>
                                     </Col>
                                     <Col lg="9">
                                         <h3>
-                                            <span>Geospatial Engineer Intern</span>
+                                            <span className="span">Geospatial Engineer Intern</span>
                                         </h3>
-                                        <h5>Ramani Land Services</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur, 
-                                            adipisicing elit. Quas, magni mollitia, 
-                                            aspernatur consequatur accusamus vero eum facere 
-                                            exercitationem velit suscipit ipsam placeat libero. 
-                                            Deleniti exercitationem nostrum quasi. Molestiae, vel porro.
-                                        </p>
+                                        <h4>Ramani Land Services</h4>
+                                        <h6>Achievements and responsibilities</h6>
+                                        <ul>
+                                            <li>Conducted static GPS survey in the coastal region</li>
+                                            <li>Drafted daily reports</li>
+                                            <li>Analyzed and presented the final information of survey field data in form of maps</li>
+                                        </ul>
                                     </Col>
                                     </Row>
                                    <div>
@@ -130,54 +131,40 @@ class Resume extends React.Component {
                                     <Row>
                                     <Col lg="3">
                                         <p>
-                                            2018 - 2019
+                                           September 2018 - February 2019
                                         </p>
                                     </Col>
                                     <Col lg="9">
                                         <h3>
-                                            <span>Full Stack Web Developer</span>
+                                            <span className="span">Full Stack Web Developer</span>
                                         </h3>
-                                        <h5>Moringa School</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur, 
-                                            adipisicing elit. Quas, magni mollitia, 
-                                            aspernatur consequatur accusamus vero eum facere 
-                                            exercitationem velit suscipit ipsam placeat libero. 
-                                            Deleniti exercitationem nostrum quasi. Molestiae, vel porro.
+                                        <h4>Moringa School</h4>
+                                    </Col>
+                                    <Col lg="3">
+                                        <p>
+                                            May 2012 - December 2017
+                                        </p>
+                                    </Col>
+                                    <Col lg="9">
+                                        <h3>
+                                            <span className="span">Geospatial Engineer</span>
+                                        </h3>
+                                        <h4>Technical University of Kenya</h4>
+                                        <p>Bachelor's Degree - GeospatialEngineering
+                                            2nd Class Upper Division
                                         </p>
                                     </Col>
                                     <Col lg="3">
                                         <p>
-                                            2012 - 2017
+                                            2007 - 2010
                                         </p>
                                     </Col>
                                     <Col lg="9">
                                         <h3>
-                                            <span>Geospatial Engineer</span>
+                                            <span className="span">Kenya Certificate of Secondary Education</span>
                                         </h3>
-                                        <h5>Technical University of Kenya</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur, 
-                                            adipisicing elit. Quas, magni mollitia, 
-                                            aspernatur consequatur accusamus vero eum facere 
-                                            exercitationem velit suscipit ipsam placeat libero. 
-                                            Deleniti exercitationem nostrum quasi. Molestiae, vel porro.
-                                        </p>
-                                    </Col>
-                                    <Col lg="3">
-                                        <p>
-                                            2008 - 2010
-                                        </p>
-                                    </Col>
-                                    <Col lg="9">
-                                        <h3>
-                                            <span>Kenya Certificate of Secondary Education</span>
-                                        </h3>
-                                        <h5>Lugulu Girls High School</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur, 
-                                            adipisicing elit. Quas, magni mollitia, 
-                                            aspernatur consequatur accusamus vero eum facere 
-                                            exercitationem velit suscipit ipsam placeat libero. 
-                                            Deleniti exercitationem nostrum quasi. Molestiae, vel porro.
-                                        </p>
+                                        <h4>Lugulu Girls High School</h4>
+                                        
                                     </Col>
                                 </Row>
 

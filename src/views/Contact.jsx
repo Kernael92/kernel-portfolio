@@ -54,63 +54,67 @@ class Contact extends React.Component {
                         <h1>CONTACT ME</h1>
                         <i></i>
                         <Row>
-                            <Col lg="6">
+                            <Col lg="8">
                                 <h1 className="p-heading1">Get in Touch</h1>
-                                <Form onSubmit={this.handleSubmit.bind(this)}>
-                                    <FormGroup controlId="formBasicEmail">
-                                        <Label className="text-muted">Email address </Label>
-                                        <Input
-                                            type="email"
-                                            name="email"
-                                            value={this.state.email}
-                                            className="text-primary"
-                                            onChange={this.handleChange.bind(this, 'email')}
-                                            placeholder="Enter email"
-                                            required
+                                <p>If you want to get in touch, talk to me about a project collaboration or just say hi, fill up the awesome form below. You can as well call me on my telephone line or send me a direct email.</p>
+                            </Col>
+                            <br/><br/>
+                            <Col lg="6">
+                            <Form onSubmit={this.handleSubmit.bind(this)}>
+                                <FormGroup controlId="formBasicEmail">
+                                    <Label className="text-muted">Email address </Label>
+                                    <Input
+                                        type="email"
+                                        name="email"
+                                        value={this.state.email}
+                                        className="text-primary"
+                                        onChange={this.handleChange.bind(this, 'email')}
+                                        placeholder="Enter email"
+                                        required
 
-                                        />
-                                    </FormGroup>
-                                    <FormGroup controlId="formBasicName">
-                                        <Label className="text-muted">Name</Label>
-                                        <Input
-                                            type="text"
-                                            name="name"
-                                            value={this.state.name}
-                                            className="text-primary"
-                                            onChange={this.handleChange.bind(this, 'name')}
-                                            placeholder="Enter your name"
-                                            required
+                                    />
+                                </FormGroup>
+                                <FormGroup controlId="formBasicName">
+                                    <Label className="text-muted">Name</Label>
+                                    <Input
+                                        type="text"
+                                        name="name"
+                                        value={this.state.name}
+                                        className="text-primary"
+                                        onChange={this.handleChange.bind(this, 'name')}
+                                        placeholder="Enter your name"
+                                        required
 
-                                        />
-                                    </FormGroup>
-                                    <FormGroup controlId="formBasicSubject">
-                                        <Label className="text-muted">Subject</Label>
-                                        <Input
-                                            type="text"
-                                            name="subject"
-                                            value={this.state.subject}
-                                            className="text-primary"
-                                            onChange={this.handleChange.bind(this, 'subject')}
-                                            placeholder="Subject"
-                                            required
+                                    />
+                                </FormGroup>
+                                <FormGroup controlId="formBasicSubject">
+                                    <Label className="text-muted">Subject</Label>
+                                    <Input
+                                        type="text"
+                                        name="subject"
+                                        value={this.state.subject}
+                                        className="text-primary"
+                                        onChange={this.handleChange.bind(this, 'subject')}
+                                        placeholder="Subject"
+                                        required
 
-                                        />
-                                    </FormGroup>
-                                    <FormGroup controlId="formBasicMessage">
-                                        <Label className="text-muted">Message</Label>
-                                        <Input
-                                            type="textarea"
-                                            name="message"
-                                            value={this.state.message}
-                                            className="text-primary"
-                                            onChange={this.handleChange.bind(this, 'message')}
-                                            required
-                                        />
-                                    </FormGroup>
-                                    <Button variant="primary" type="submit">Send</Button>
+                                    />
+                                </FormGroup>
+                                <FormGroup controlId="formBasicMessage">
+                                    <Label className="text-muted">Message</Label>
+                                    <Input
+                                        type="textarea"
+                                        name="message"
+                                        value={this.state.message}
+                                        className="text-primary"
+                                        onChange={this.handleChange.bind(this, 'message')}
+                                        required
+                                    />
+                                </FormGroup>
+                                <Button variant="primary" type="submit">Send Mail</Button>
 
                                     
-                                </Form>
+                            </Form>
                             </Col>
                             <Col lg="6">
                             <Card className="card">

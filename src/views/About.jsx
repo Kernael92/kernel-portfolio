@@ -39,26 +39,45 @@ class About extends React.Component {
                                 I can provide clean code and pixel perfect design.
                                 I also make websites more and more interactive with web animations.
                                 </h4>
-                                <p>
-                                    <b>Full name : </b>
-                                    Kernael Apuko
-                                </p>
-                                <p>
-                                    <b>Nationality : </b>
-                                    Kenyan
-                                </p>
-                                <p>
-                                    <b>Languages : </b>
-                                    English, Kiswahili
-                                </p>
-                                <p>
-                                    <b>Freelance : </b>
-                                    Available
-                                </p>
-                                <p>
-                                    <b>Full-time : </b>
-                                    Available
-                                </p>
+                                <ul>
+                                    <li>
+                                        <b>
+                                            Full name     
+                                        </b>
+                                        :Kernael Apuko
+                                    </li>
+                                    <li>
+                                        <b>
+                                            Nationality     
+                                        </b>
+                                        :
+                                        Kenyan
+                                    </li>
+                                    <li>
+                                        <b>
+                                            Languages    
+                                        </b>
+                                        :
+                                        English, Kiswahili
+                                    </li>
+                                    <li>
+                                        <b>
+                                            Freelance     
+                                        </b>
+                                        :
+                                        Available
+                                    </li>
+                                    <li>
+                                        <b>
+                                            Full-time 
+                                            
+                                        </b>
+                                        : 
+                                        Available
+                                    </li>
+                                </ul>
+                                
+                                <br/><br/>
                                 
                                 <a className="btn" href="/KERNAEL APUKO CURRICULUM VITAE (1) (1).pdf" onClick={(event) => { event.preventDefault(); window.open(filePath); }}>
                                     DOWNLOAD CV

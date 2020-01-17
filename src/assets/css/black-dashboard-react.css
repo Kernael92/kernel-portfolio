@@ -108,6 +108,38 @@
     margin-bottom: 1rem; 
     
   }
+  ul li b {
+    display: inline-block;
+    position: relative;
+    margin-right: 7px;
+    min-width: 120px;
+    
+    
+    
+  }
+  b {
+    font-weight: bold;
+    
+  }
+  *, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul li {
+    list-style: none;
+    display: flex;
+    
+  }
+  ul li:not(:last-child) {
+    margin-bottom: 3px;
+  }
+  @media only screen and (max-width: 767px) {
+    ul li b {
+      min-width: 90px;
+    }
+  }
+  
   .card:hover {
     box-shadow: 5px 5px 5px blue;
     cursor: pointer;
